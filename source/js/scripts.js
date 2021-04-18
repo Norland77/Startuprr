@@ -90,14 +90,12 @@ function HideScrol() {
   if (document.getElementById("wrapper").style.overflowY == "hidden")
   {
     document.getElementById("wrapper").style.overflowY = "scroll";
-    //document.getElementById("header").style.position = "sticky";
     document.getElementById("header").style.opacity = "1";
     document.getElementById("header").style.transitionDuration = "0.5s";
   }
   else
   {
     document.getElementById("wrapper").style.overflowY = "hidden";
-    //document.getElementById("header").style.position = "fixed";
     document.getElementById("header").style.opacity = "0";
     document.getElementById("header").style.transitionDuration = "0.5s";
   }
