@@ -32,7 +32,6 @@ h6 {
 /*Container*/
 .container {
     width: 100%;
-    max-width: 1400px;
 }
 
 /*Intro*/
@@ -311,6 +310,7 @@ h6 {
 
 .section__content {
     display: flex;
+    justify-content: center;
     margin-top: 4.3%;
 }
 
@@ -403,11 +403,13 @@ h6 {
 
 .feature__supcontent {
     display: flex;
+    justify-content: center;
 }
 
 .feature__content {
     margin-top: 6%;
     margin-left: 2%;
+    margin-bottom: 2%;
 }
 
 .feature__content_title {
@@ -433,8 +435,7 @@ h6 {
 }
 
 .feature__img_img {
-    width: 670px;
-    height: 430px;
+    width: 100%;
 }
 
 /*Section advantages*/
@@ -446,6 +447,7 @@ h6 {
 .section__advantages_top,
 .section__advantages_bottom {
     display: flex;
+    justify-content: center;
 }
 
 .section__advantages_iner {
@@ -571,14 +573,13 @@ h6 {
 
 .section__Gallery_top {
     width: 100%;
-    height: 175px;
+    /*height: 175px;*/
     display: flex;
     justify-content: center;
 }
 
 .section__Galery_botom {
     width: 100%;
-    height: 175px;
     display: flex;
     justify-content: center;
 }
@@ -727,6 +728,7 @@ h6 {
 
 .information_line_content {
     display: flex;
+    justify-content: center;
 }
 
 .information_line_text {
@@ -1145,6 +1147,7 @@ sup {
 /*Section Reklama*/
 
 .section__reklama {
+    width: 100%;
     height: 160px;
     background: url(./source/img/Oblaka.jpg);
     background-repeat: no-repeat;
@@ -1157,9 +1160,14 @@ sup {
     padding-left: 80px;
 }
 
+.reklama_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
 .reklama_img {
-    width: 15%;
-    height: 90%;
+    width: 170px;
+    height: 170px;
 }
 
 .reklama_text {
