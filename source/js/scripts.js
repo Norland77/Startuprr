@@ -1,14 +1,20 @@
 /*Показ геллереи*/
 function viewDiv(){
+  const btn = document.querySelector('.section__Gallery_btn');
+
   if (document.getElementById("gallery_hiden").style.display == "block")
   {
     document.getElementById("gallery_hiden").style.display = "none";
     document.getElementById("gallery_hiden").style.transitionDuration = "0.3s";
+    document.getElementById("section__Gallery_imggroup").style.marginBottom = "26px";
+    btn.innerHTML = ('VIEV ALL WORKS')
   }
   else
   {
     document.getElementById("gallery_hiden").style.display = "block";
     document.getElementById("gallery_hiden").style.transitionDuration = "0.3s";
+    document.getElementById("section__Gallery_imggroup").style.marginBottom = "0px";
+    btn.innerHTML = ('SHOW WORKS')
   }
 };
 /*Показ цитат*/
@@ -17,13 +23,11 @@ function viewQuotes() {
     {
     document.getElementById("quotes_content_1").style.display = "none";
     document.getElementById("quotes_content_2").style.display = "block";
-    document.getElementById("gallery_hiden").style.transitionDuration = "0.3s";
     }
     else
     {
         document.getElementById("quotes_content_1").style.display = "block";
         document.getElementById("quotes_content_2").style.display = "none";
-    document.getElementById("gallery_hiden").style.transitionDuration = "0.3s";
     }
 };
 /*Показ карты*/
@@ -90,12 +94,14 @@ function HideScrol() {
   if (document.getElementById("wrapper").style.overflowY == "hidden")
   {
     document.getElementById("wrapper").style.overflowY = "scroll";
+    //document.getElementById("header").style.position = "sticky";
     document.getElementById("header").style.opacity = "1";
     document.getElementById("header").style.transitionDuration = "0.5s";
   }
   else
   {
     document.getElementById("wrapper").style.overflowY = "hidden";
+    //document.getElementById("header").style.position = "fixed";
     document.getElementById("header").style.opacity = "0";
     document.getElementById("header").style.transitionDuration = "0.5s";
   }

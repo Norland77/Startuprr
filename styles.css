@@ -32,16 +32,14 @@ h6 {
 /*Container*/
 .container {
     width: 100%;
-    /*max-width: 1400px;*/
+    max-width: 1400px;
 }
 
 /*Intro*/
 
 .intro {
     width: 100%;
-    height: auto;
     display: flex;
-    padding: 10% 0% 10% 0%;
     flex-direction: column;
     justify-content: center;
     transform-style: inherit;
@@ -55,15 +53,15 @@ h6 {
     text-transform: uppercase;
     line-height: 1;
     text-align: center;
-    margin-bottom: 2%;
+    margin-bottom: 8px;
 }
 
 .intro__iner {
+    padding: 6.5% 0 6.5% 0;
     width: 100%;
     max-width: 440px;
     margin: 0, auto;
     margin-left: 22%;
-    text-align: center;
 }
 
 .intro__suptitle {
@@ -71,7 +69,7 @@ h6 {
     text-align: center;
     font-weight: normal;
     line-height: 1;
-    margin-right: 2%;
+    margin-right: 17px;
 }
 
 .intro__subtitle {
@@ -81,7 +79,7 @@ h6 {
     background-color: #383838;
     border-radius: 5px;
     color: white;
-    padding: 1.5%;
+    padding: 8px;
     line-height: 1;
 }
 
@@ -91,9 +89,10 @@ h6 {
 
 .intro__subsubtitle {
     font-size: 20px;
-    padding: 7% 4.5% 4.5% 4.5%;
+    padding: 20px;
     text-align: center;
     line-height: 1;
+    margin-top: 10px;
 }
 
 .intro__subsubtitle_first {
@@ -101,7 +100,9 @@ h6 {
 }
 
 .intro__icon {
-    width: 11.5%;
+    width: 50px;
+    height: 50px;
+    margin-left: 190px;
 }
 
 /*HEADER*/
@@ -111,10 +112,10 @@ h6 {
     top: 0;
     background: #F9F9F9;
     width: 100%;
-    height: 65px;
     left: 0;
     right: 0;
     z-index: 1000;
+    margin-left: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -124,13 +125,15 @@ h6 {
 }
 
 .header__iner {
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
 .logo {
+    margin: 0.7% 0% 0.7% 0%;
     color: #9b9c9c;
-    margin-left: 15.268%;
+    margin-left: 15.5%;
     display: flex;
 }
 
@@ -141,11 +144,12 @@ h6 {
 
 /*NAV*/
 .nav {
+    margin: 0.7% 0% 0.7% 0%;
+    width: 100%;
     font-size: 10px;
     font-weight: bold;
     text-transform: uppercase;
-    margin-right: 6%;
-    width: 50%;
+    margin-left: 15%;
 }
 
 .nav__link {
@@ -153,8 +157,9 @@ h6 {
     text-decoration: none;
     display: inline-block;
     vertical-align: top;
-    padding: 1.5% 1.5% 1.5% 1.5%;
-    margin-left: 1.9%;
+    padding: 1%;
+    margin: 0, 5px;
+    margin-left: 2%;
 }
 
 .nav__link:hover {
@@ -166,7 +171,7 @@ h6 {
 
 /*Section*/
 .section {
-    padding: 9.2%;
+    padding: 9.5% 0 9.5% 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -288,8 +293,9 @@ h6 {
 }
 
 .title_arow {
-    width: 5%;
-    padding: 1.2%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
 }
 
 .section__subtitle {
@@ -300,24 +306,23 @@ h6 {
 
 .section__color-word {
     color: #00a99d;
-    padding: 0% 0.5% 0% 0.5%;
+    padding: 0px 5px 0px 5px;
 }
 
 .section__content {
     display: flex;
-    margin-top: 3.8%;
+    margin-top: 4.3%;
 }
 
 .section__content_card {
-    margin-left: 0.5%;
+    margin-left: 5px;
     color: #606060;
-    width: 100%;
 }
 
 .section__content_img {
     width: 85px;
     height: 85px;
-    padding: 1.5%;
+    padding: 5px;
 }
 
 .section__content_img:hover {
@@ -327,23 +332,26 @@ h6 {
 }
 
 .section__content_title {
-    margin-top: 5.5%;
+    margin-top: 18px;
     font-size: 13.5px;
 }
 
 .section__content_text {
-    margin: 3% 0% 5.5% 0%;
+    margin-top: 10px;
+    margin-bottom: 18px;
     font-size: 13px;
+    padding: 0px 2px 0px 2px;
 }
 
 .section__content_link {
     color: #606060;
     text-decoration: none;
-    padding: 3%;
+    padding: 10px;
     font-size: 11px;
     font-weight: bold;
     display: inline-block;
     vertical-align: top;
+    border: 2px, solid, #606060;
 }
 
 .section__content_link:hover {
@@ -354,8 +362,8 @@ h6 {
 }
 
 .section_second {
-    padding: 5.7%;
-    padding-bottom: 0;
+    padding: 5.7% 0 5.7% 0;
+    padding-bottom: 0px;
     background: #383838;
 }
 
@@ -381,7 +389,7 @@ h6 {
 
 .feature__content_card {
     display: flex;
-    padding: 6.3%;
+    padding: 6.5%;
     width: 100%;
 }
 
@@ -390,7 +398,7 @@ h6 {
     height: 50px;
     background: #00a99d;
     border-radius: 50%;
-    padding: 10%;
+    padding: 5px;
 }
 
 .feature__supcontent {
@@ -399,6 +407,7 @@ h6 {
 
 .feature__content {
     margin-top: 6%;
+    margin-left: 2%;
 }
 
 .feature__content_title {
@@ -411,26 +420,27 @@ h6 {
     font-size: 13px;
     font-weight: normal;
     color: #7a7a7a;
-    margin-top: 4.5%;
+    margin-top: 10px;
 }
 
 .feature__content_text {
-    margin-left: 10%;
+    margin-left: 9%;
 }
 
 .feature__img {
-    margin-left: 10%;
-    margin-top: 1.5%;
+    margin-left: 115px;
+    margin-top: 18px;
 }
 
 .feature__img_img {
-    width: 100%
+    width: 670px;
+    height: 430px;
 }
 
 /*Section advantages*/
 
 .section__advantages {
-    padding: 3.8%;
+    padding: 4%;
 }
 
 .section__advantages_top,
@@ -440,7 +450,8 @@ h6 {
 
 .section__advantages_iner {
     display: flex;
-    padding: 1.5% 1% 1.5% 1.5%;
+    padding: 18px;
+    padding-right: 14px;
 }
 
 .section__advantages_icon {
@@ -456,7 +467,7 @@ h6 {
 }
 
 .section__advantages_content {
-    margin-left: 1.6%;
+    margin-left: 15px;
 }
 
 .section__advantages_content_title {
@@ -475,17 +486,19 @@ h6 {
     color: #7a7a7a;
     font-size: 14px;
     font-weight: normal;
-    margin-top: 4%;
+    margin-top: 12px;
 }
 
 /*Section Skills*/
 
 .section__skills {
-    padding: 5.7% 5.7% 3% 5.7%;
+    padding: 5.5% 0 5.5% 0;
     background: #383838;
+    padding-bottom: 5.3%;
 }
 
 .section__skills_content {
+    width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -497,9 +510,22 @@ h6 {
     border-color: white;
     border-style: solid;
     border-radius: 50%;
-    padding: 20%;
+    padding: 25px;
     width: 100px;
     height: 100px;
+}
+
+.section__skills_number::before {
+    content: '';
+    display: block;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+    background: #ccc;
+    z-index: 3;
+    opacity: 1;
 }
 
 .section__skills_num {
@@ -513,11 +539,17 @@ h6 {
     font-size: 14px;
     font-weight: bold;
     text-align: center;
-    margin-top: 8%;
+    margin-top: 12px;
 }
 
 .section__skills_items {
-    padding: 2.5%;
+    padding: 30px;
+    width: 100%;
+}
+
+.section__skills_items_up,
+.section__skills_items_down {
+    display: flex;
 }
 
 .percent {
@@ -528,36 +560,44 @@ h6 {
 /*Section Gallery*/
 
 .section__Gallery {
-    padding: 5.7% 0% 5.7% 0%;
+    padding: 5.7% 0 5.7% 0;
     text-align: center;
 }
 
-.section__Gallery_imggroup {
-    margin: 3.8% 0% 2% 0%;
+#section__Gallery_imggroup {
+    margin-top: 50px;
+    margin-bottom: 26px;
 }
 
 .section__Gallery_top {
+    width: 100%;
+    height: 175px;
     display: flex;
     justify-content: center;
 }
 
 .section__Galery_botom {
+    width: 100%;
+    height: 175px;
     display: flex;
     justify-content: center;
 }
 
 .galery_item {
     width: 100%;
-    padding: 1px;
+    height: 98%;
+    margin: 1px;
     justify-content: center;
     text-align: center;
     background: #00a99d;
+    position: relative;
+    border-radius: 3%;
 }
 
 .galery_content {
-    margin-top: 2.5%;
-    width: 16.5%;
-    height: auto;
+    top: 20%;
+    align-items: center;
+    width: 100%;
     position: absolute;
     color: white;
     opacity: 0;
@@ -574,7 +614,7 @@ h6 {
 }
 
 .galery_name {
-    margin-top: 25px;
+    margin-top: 15px;
 }
 
 .galery_ganre {
@@ -595,7 +635,11 @@ h6 {
 }
 
 .section__Gallery_btn-viev {
+    width: 100%;
     margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 #gallery_hiden {
@@ -610,8 +654,11 @@ h6 {
     border-width: 1.5px;
     border-style: solid;
     border-color: #5d5d5d;
-    border-radius: 10px/5px;
-    padding: 5px 340px 5px 340px;
+    border-radius: 8%;
+    padding-right: 25%;
+    padding-left: 25%;
+    padding-top: 5px;
+    padding-bottom: 5px;
     cursor: pointer;
 }
 
@@ -625,11 +672,21 @@ h6 {
 
 .section__Facts {
     background: #383838;
-    padding: 5.7%;
+    padding: 5.7% 0 5.7% 0;
     text-align: center;
 }
 
 .section__Facts_content {
+    display: flex;
+    justify-content: center;
+}
+
+.section__Facts_content_up {
+    display: flex;
+    justify-content: center;
+}
+
+.section__Facts_content_down {
     display: flex;
     justify-content: center;
 }
@@ -651,8 +708,9 @@ h6 {
 }
 
 .section__Facts_items {
-    width: 100%;
     padding: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 .month {
@@ -663,18 +721,25 @@ h6 {
 /*Information Line*/
 
 .information_line {
-    padding: 2% 4.5% 2% 4.5%;
+    padding: 2% 0 2% 0;
     background: #00a99d;
 }
 
 .information_line_content {
     display: flex;
-    justify-content: space-between;
+}
+
+.information_line_text {
+    margin-left: 9.5%;
 }
 
 .information_line_maintext {
     font-size: 14px;
     color: #e4e4e4;
+}
+
+.information_line_btn {
+    margin-left: 30%;
 }
 
 .information_line_btn1 {
@@ -697,12 +762,12 @@ h6 {
 /*Section Team*/
 
 .section__team {
-    padding: 5.7%;
+    width: 100%;
+    padding: 5.7% 0 5.7% 0;
     text-align: center;
 }
 
 .member_item {
-    width: 100%;
     justify-content: center;
     text-align: center;
     background: #00a99d;
@@ -730,6 +795,7 @@ h6 {
 }
 
 .section__team_members {
+    width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 25px;
@@ -737,14 +803,14 @@ h6 {
 
 .section__team_member {
     width: 100%;
-    justify-content: center;
     text-align: center;
-    flex-direction: column;
     margin: 13px;
 }
 
 .section__team_content {
     width: 100%;
+    text-align: center;
+    justify-content: center;
 }
 
 .section__team_member {
@@ -758,30 +824,31 @@ h6 {
 }
 
 .team_img {
-    width: 235px;
-    height: 240px;
+    width: 100%;
 }
 
 .team_name {
-    width: 100%;
     font-family: Raleway;
     font-size: 13px;
     line-height: 1.2;
     font-weight: 800;
     text-transform: uppercase;
-    color: #606060;
+    color: #e4e4e4;
     text-decoration: none;
+    background-color: #00a99d;
+    padding: 8px;
 }
 
-.section__team_name:hover {
-    background: #00a99d;
-    color: #606060;
+.team_name:hover {
+    background: #383838;
+    color: #e4e4e4;
     transition-duration: 0.3s;
 }
 
 .section__team_name {
+    justify-content: center;
+    text-align: center;
     width: 100%;
-    padding: 5px;
 }
 
 .team_func {
@@ -799,16 +866,14 @@ h6 {
 }
 
 .section__team_contact {
+    justify-content: center;
+    text-align: center;
     display: flex;
     font-family: Raleway;
     font-size: 12px;
     font-weight: 500;
     padding: 5px;
-}
-
-.section__team_contact {
-    justify-content: center;
-    text-align: center;
+    width: 100%;
 }
 
 .tean_email {
@@ -851,28 +916,28 @@ h6 {
 
 .section__quotes {
     background: #00a99d;
-    padding: 5.7%;
+    padding: 5.7% 0 5.7% 0;
 }
 
 .section__quotes_main {
-    margin: 0% 7% 0% 7%;
-}
-
-.section__quotes_main {
+    margin-right: 80px;
+    margin-left: 80px;
     text-align: center;
 }
 
 .section__quotes_name {
-    width: 30%;
-    margin-left: 35%;
-    background: #f9f9f9;
-    padding: 8px 5px 8px 5px;
-    border-radius: 5px/15px;
+    text-align: center;
+    width: 100%;
 }
 
 .quotes_name {
+    margin-left: 30%;
+    width: 40%;
     font-size: 13px;
     color: #00a99d;
+    background: #f9f9f9;
+    padding: 8px 5px 8px 5px;
+    border-radius: 5px/15px;
 }
 
 .quotes_func {
@@ -898,11 +963,15 @@ h6 {
 .section__quotes_btn {
     display: flex;
     justify-content: center;
-    width: 100%;
 }
 
 .quotes_content_2 {
+    text-align: center;
     display: none;
+}
+
+.quotes_content_1 {
+    text-align: center;
 }
 
 .quotes_btn {
@@ -927,22 +996,23 @@ h6 {
 
 .section__karusel {
     background: #383838;
-    padding: 1.9%;
+    padding: 1.5% 0 1.5% 0;
 }
 
 .karusel {
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 
 .karusel_img {
-    width: 100%;
+    width: 260px;
     padding: 10px;
     opacity: 50%;
 }
 
 .karusel_btn {
-    margin-top: 5%;
+    margin-top: 4%;
     height: 40px;
     width: 3%;
     padding: 10px;
@@ -960,13 +1030,31 @@ h6 {
 
 .section__price {
     text-align: center;
-    padding: 5.7%;
+    padding: 5.7% 0 5.7% 0;
+
 }
 
 .prices {
+    width: 100%;
+    margin-top: 60px;
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+}
+
+.prices__group {
+    display: flex;
+    justify-content: center;
+}
+
+
+.prices_block_up {
+    display: flex;
+    justify-content: center;
+}
+
+.prices_block_down {
+    display: flex;
+    justify-content: center;
 }
 
 .prices_block {
@@ -980,6 +1068,7 @@ h6 {
 }
 
 .prices_list {
+    width: 100%;
     padding-bottom: 15px;
     border-bottom-color: #e4e4e4;
     border-bottom-width: 1px;
@@ -1020,6 +1109,7 @@ h6 {
 }
 
 .prices_price {
+    width: 175px;
     color: #8A8A8A;
     border-bottom-color: #e4e4e4;
     border-bottom-width: 1px;
@@ -1055,19 +1145,21 @@ sup {
 /*Section Reklama*/
 
 .section__reklama {
-    height: 180px;
-    background: url(./source/img/Oblaka.jpg) center no-repeat;
+    height: 160px;
+    background: url(./source/img/Oblaka.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
 .reklama {
-    width: 100%;
+    width: 95%;
     display: flex;
-    padding: 0% 8% 0% 8%;
+    padding-left: 80px;
 }
 
 .reklama_img {
-    width: 20%;
+    width: 15%;
+    height: 90%;
 }
 
 .reklama_text {
@@ -1106,14 +1198,13 @@ sup {
 .reklama_ico {
     margin-left: 10px;
     width: 10%;
-    height: 20px;
 }
 
 /*Futer*/
 
 .Futer {
     background: #383838;
-    padding: 5%;
+    padding: 60px;
 }
 
 .Futer_social {
@@ -1160,7 +1251,7 @@ sup {
 
 .Down__Futer {
     background: #383838;
-    padding: 1.9%;
+    padding: 25px;
     text-align: center;
 }
 
@@ -1187,4 +1278,78 @@ sup {
 
 .Map {
     display: none;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (max-width: 1190px) {
+    .container {
+        max-width: 1030px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 967px;
+    }
+
+    .feature__img {
+        display: none;
+    }
+
+    .feature__supcontent {
+        justify-content: center;
+    }
+
+    .information_line_text {
+        margin-left: 5%;
+    }
+
+    .information_line_btn {
+        margin-left: 15%;
+    }
+
+    .karusel_img {
+        width: 220px;
+        padding: 10px;
+        opacity: 50%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .section__skills_content {
+        display: block;
+    }
+
+    .section__skills_items {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .section__Facts_content {
+        display: block;
+    }
+
+    .information_line_text {
+        margin-left: 0%;
+    }
+
+    .information_line_btn {
+        margin-left: 0.17%;
+    }
+
+    .container {
+        max-width: none;
+    }
 }
