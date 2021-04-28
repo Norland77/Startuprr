@@ -106,3 +106,20 @@ function HideScrol() {
     document.getElementById("header").style.transitionDuration = "0.5s";
   }
 };
+
+//Burger
+
+function Burger() {
+  if (document.getElementsById("nav").style.display == "none")
+  {
+    document.getElementsById("nav").style.display == "block"
+    document.getElementsById("nav").style.opacity == "1"
+    document.getElementsById("nav").style.transitionDuration = "0.5s";
+  }
+  else
+  {
+    document.getElementsById("nav").style.display == "none"
+    document.getElementsById("nav").style.opacity == "0"
+    document.getElementsById("nav").style.transitionDuration = "0.5s";
+  }
+};

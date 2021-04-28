@@ -29,27 +29,30 @@
                 <h4 class="intro__subsubtitle">
                     <span class="intro__subsubtitle_first">START</span> DOING THAT
                 </h4>
-                <img src="./source/img/Icon_intro.svg" class="intro__icon">
+                <img src="./source/img/Icon_intro.svg" class="intro__icon" alt="Title icon">
             </div>
         </div>
     </div>
     <div class="header" id="header"> 
         <div class="container">
-            <a name="Header"></a>
+            <a id="Header"></a>
             <div class="header__iner">
                 <div class="logo">
-                    <img class="logo__icon" src="./source/img/Logo.png">
+                    <img class="logo__icon" src="./source/img/Logo.png" alt="Logo">
                     <h6 class="Logo_name">STARTUPRR</h6>
                 </div>
-                <nav class="nav">
-                    <a class="nav__link" href="#">HOME</a>
-                    <a class="nav__link" href="#Gallery">PORTFOLIO</a>
+                <nav id="nav" class="nav">
+                    <a data-goto=".wrapper" class="nav__link" href="#">HOME</a>
+                    <a data-goto=".section__Gallery" class="nav__link" href="#Gallery">PORTFOLIO</a>
                     <a class="nav__link" href="#">BLOG</a>
                     <a class="nav__link" href="#">PAGES</a>
-                    <a class="nav__link" href="#Features">FEATURES</a>
+                    <a data-goto=".section_second" class="nav__link" href="#Features">FEATURES</a>
                     <a class="nav__link" href="#">MEGA MENU</a>
-                    <a class="nav__link" href="#Contact">CONTACT</a>
+                    <a data-goto=".Futer" class="nav__link" href="#Contact">CONTACT</a>
                 </nav>
+                <div onclick="Burger()" class="burger">
+                    <span></span>
+                </div>
             </div>
         </div>
     </div>
@@ -57,18 +60,18 @@
         <div class="container">
             <div class="section__header">
                 <h2 class="section__title">
-                    <img class="title_arow" src="./source/img/left-arrow.svg">
-                    <img class="title_arow" src="./source/img/left-arrow.svg">
+                    <img class="title_arow" src="./source/img/left-arrow.svg" alt="arow">
+                    <img class="title_arow" src="./source/img/left-arrow.svg" alt="arow">
                     WHAT WE <span class="section__color-word">OFFER</span>
-                    <img class="title_arow" src="./source/img/right-arrow.svg">
-                    <img class="title_arow" src="./source/img/right-arrow.svg">
+                    <img class="title_arow" src="./source/img/right-arrow.svg" alt="arow">
+                    <img class="title_arow" src="./source/img/right-arrow.svg" alt="arow">
                 </h2>
                 <h3 class="section__subtitle">
                     We offer our customers the best services & solution, this is our main services list
                 </h3>
                 <div id="Read_more_popup_1" class="Read_more_popup_1">
                     <div id="popup_1" class="popup_1">
-                        <a onclick="HideScrol()" href="##" class="popup_close">X</a>
+                        <a onclick="HideScrol()" href="#popup_1" class="popup_close">X</a>
                         <img src="./source/img/PC-Icon.svg" alt="Pc-icon" class="popupimg">
                         <h2 class="popup_title">
                             RESPONSIVE & MULTIPURPOSE
@@ -82,7 +85,7 @@
                 </div>
                 <div id="Read_more_popup_2" class="Read_more_popup_2">
                     <div id="popup_2" class="popup_2">
-                        <a onclick="HideScrol()" href="##" class="popup_close">X</a>
+                        <a onclick="HideScrol()" href="#popup_2" class="popup_close">X</a>
                         <img src="./source/img/Puzzle-Icon.svg" alt="Pc-icon" class="popupimg">
                         <h2 class="popup_title">
                             EASY CUSTOMIZATION
@@ -96,7 +99,7 @@
                 </div>
                 <div id="Read_more_popup_3" class="Read_more_popup_3">
                     <div id="popup_3" class="popup_3">
-                        <a onclick="HideScrol()" href="##" class="popup_close">X</a>
+                        <a onclick="HideScrol()" href="#popup_3" class="popup_close">X</a>
                         <img src="./source/img/Circle-Icon.svg" alt="Pc-icon" class="popupimg">
                         <h2 class="popup_title">
                             AWESOME FRIENDLY SUPPORT
@@ -110,37 +113,37 @@
                 </div>
                 <div class="section__content">
                     <div class="section__content_card">
-                        <img class="section__content_img" src="./source/img/PC-Icon.svg">
+                        <img class="section__content_img" alt="PC" src="./source/img/PC-Icon.svg">
                         <h4 class="section__content_title">RESPONSIVE & MULTIPURPOSE</h4>
                         <p class="section__content_text">Proin in magna a ipsum viverra scelerisq enec turp, Nunc vestibulum fringilla accumsan ornare quis</p>
-                        <a onclick="HideScrol()" id="popup_btn" class="section__content_link" href="#Read_more_popup_1">READ MORE</a>
+                        <a onclick="HideScrol()" id="popup_btn1" class="section__content_link" href="#Read_more_popup_1">READ MORE</a>
                     </div>
                     <div class="section__content_card">
-                        <img class="section__content_img" src="./source/img/Puzzle-Icon.svg">
+                        <img class="section__content_img" alt="Pazzle" src="./source/img/Puzzle-Icon.svg">
                         <h4 class="section__content_title">EASY CUSTOMIZATION</h4>
                         <p class="section__content_text">Quis facilisis. Curae;. Facilisi per vehicula massa Varius Vivamus Blandit nisl Suspendisse mattis elementum, quisque.</p>
-                        <a onclick="HideScrol()" id="popup_btn" class="section__content_link" href="#Read_more_popup_2">READ MORE</a>
+                        <a onclick="HideScrol()" id="popup_btn2" class="section__content_link" href="#Read_more_popup_2">READ MORE</a>
                     </div>
                     <div class="section__content_card">
-                        <img class="section__content_img" src="./source/img/Circle-Icon.svg">
+                        <img class="section__content_img" alt="Circle" src="./source/img/Circle-Icon.svg">
                         <h4 class="section__content_title">AWESOME FRIENDLY SUPPORT</h4>
                         <p class="section__content_text">Tempus tortor nullam tortor dis hendrerit tortor egestas nostra enim facilisis. Cum accumsan odio, euismod</p>
-                        <a onclick="HideScrol()" id="popup_btn" class="section__content_link" href="#Read_more_popup_3">READ MORE</a>
+                        <a onclick="HideScrol()" id="popup_btn3" class="section__content_link" href="#Read_more_popup_3">READ MORE</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <a name="Features"></a>
+    <a id="Features"></a>
     <section class="section_second">
         <div class="container">
             <div class="section_main_title">
                 <h2 class="section__title_second">
-                    <img class="title_arow" src="./source/img/left-arrow.svg">
-                    <img class="title_arow" src="./source/img/left-arrow.svg">   
+                    <img class="title_arow" src="./source/img/left-arrow.svg" alt="arow">
+                    <img class="title_arow" src="./source/img/left-arrow.svg" alt="arow">   
                     AMAZING <span class="section__color-word">FEATURE</span>
-                    <img class="title_arow" src="./source/img/right-arrow.svg">
-                    <img class="title_arow" src="./source/img/right-arrow.svg">
+                    <img class="title_arow" src="./source/img/right-arrow.svg" alt="arow">
+                    <img class="title_arow" src="./source/img/right-arrow.svg" alt="arow">
                 </h2>
                 <h3 class="section__subtitle_second">
                     With unlimited features that we offer, we promise it's possible to make everything that was impossible for you !
@@ -150,7 +153,7 @@
                 <div class="feature__content">
                     <div class="feature__content_card">
                         <div class="feature__content_img">
-                            <img class="feature__content_ico" src="./source/img/PC-Icon.svg">
+                            <img class="feature__content_ico" alt="PC" src="./source/img/PC-Icon.svg">
                         </div>
                         <div class="feature__content_text">
                             <h2 class="feature__content_title">
@@ -163,7 +166,7 @@
                     </div>
                     <div class="feature__content_card">
                         <div class="feature__content_img">
-                            <img class="feature__content_ico" src="./source/img/Puzzle-Icon.svg">
+                            <img class="feature__content_ico" alt="Puzzle" src="./source/img/Puzzle-Icon.svg">
                         </div>
                         <div class="feature__content_text">
                             <h2 class="feature__content_title">
@@ -176,7 +179,7 @@
                     </div>
                     <div class="feature__content_card">
                         <div class="feature__content_img">
-                            <img class="feature__content_ico" src="./source/img/Circle-Icon.svg">
+                            <img class="feature__content_ico" alt="Circle" src="./source/img/Circle-Icon.svg">
                         </div>
                         <div class="feature__content_text">
                             <h2 class="feature__content_title">
@@ -189,7 +192,7 @@
                     </div>
                 </div>
                 <div class="feature__img">
-                    <img class="feature__img_img" src="./source/img/Feature-image.png">
+                    <img class="feature__img_img" alt="Laptop" src="./source/img/Feature-image.png">
                 </div>
             </div>
         </div>
@@ -199,7 +202,7 @@
             <div class="section__advantages_top">
                 <div class="section__advantages_iner">
                     <div class="section__advantages_img">
-                        <img class="section__advantages_icon" src = "./source/img/PC-Icon.svg">
+                        <img class="section__advantages_icon" alt="PC" src = "./source/img/PC-Icon.svg">
                     </div>
                     <div class="section__advantages_content">
                         <h2 class="section__advantages_content_title">
@@ -215,7 +218,7 @@
                 </div>
                 <div class="section__advantages_iner">
                     <div class="section__advantages_img">
-                        <img class="section__advantages_icon" src = "./source/img/PC-Icon.svg">
+                        <img class="section__advantages_icon" alt="PC" src = "./source/img/PC-Icon.svg">
                     </div>
                     <div class="section__advantages_content">
                         <h2 class="section__advantages_content_title">
@@ -231,7 +234,7 @@
                 </div>
                 <div class="section__advantages_iner">
                     <div class="section__advantages_img">
-                        <img class="section__advantages_icon" src = "./source/img/PC-Icon.svg">
+                        <img class="section__advantages_icon" alt="PC" src = "./source/img/PC-Icon.svg">
                     </div>
                     <div class="section__advantages_content">
                         <h2 class="section__advantages_content_title">
@@ -248,7 +251,7 @@
             <div class="section__advantages_bottom">
                 <div class="section__advantages_iner">
                     <div class="section__advantages_img">
-                        <img class="section__advantages_icon" src = "./source/img/PC-Icon.svg">
+                        <img class="section__advantages_icon" alt="PC" src = "./source/img/PC-Icon.svg">
                     </div>
                     <div class="section__advantages_content">
                         <h2 class="section__advantages_content_title">
@@ -263,7 +266,7 @@
                 </div>
                 <div class="section__advantages_iner">
                     <div class="section__advantages_img">
-                        <img class="section__advantages_icon" src = "./source/img/PC-Icon.svg">
+                        <img class="section__advantages_icon" alt="PC" src = "./source/img/PC-Icon.svg">
                     </div>
                     <div class="section__advantages_content">
                         <h2 class="section__advantages_content_title">
@@ -278,7 +281,7 @@
                 </div>
                 <div class="section__advantages_iner">
                     <div class="section__advantages_img">
-                        <img class="section__advantages_icon" src = "./source/img/PC-Icon.svg">
+                        <img class="section__advantages_icon" alt="PC" src = "./source/img/PC-Icon.svg">
                     </div>
                     <div class="section__advantages_content">
                         <h2 class="section__advantages_content_title">
@@ -298,11 +301,11 @@
         <div class="container">
             <div class="section_main_title">
                 <h2 class="section__title_second">
-                    <img class="title_arow" src="./source/img/left-arrow.svg">
-                    <img class="title_arow" src="./source/img/left-arrow.svg">
+                    <img class="title_arow" src="./source/img/left-arrow.svg" alt="arow">
+                    <img class="title_arow" src="./source/img/left-arrow.svg" alt="arow">
                     OUR POWERFUL <span class="section__color-word">SKILLS</span>
-                    <img class="title_arow" src="./source/img/right-arrow.svg">
-                    <img class="title_arow" src="./source/img/right-arrow.svg">
+                    <img class="title_arow" src="./source/img/right-arrow.svg" alt="arow">
+                    <img class="title_arow" src="./source/img/right-arrow.svg" alt="arow">
                 </h2>
                 <h3 class="section__subtitle_second">
                     We're good and experienced at different things and areas and we promise about qulity of our works
@@ -388,16 +391,16 @@
             </div>
         </div>
     </section>
-    <a name="Gallery"></a>
+    <a id="Gallery"></a>
     <section class="section__Gallery">
         <div class="container">
             <div class="section__header">
                 <h2 class="section__title">
-                    <img class="title_arow" src="./source/img/left-arrow.svg">
-                    <img class="title_arow" src="./source/img/left-arrow.svg">
+                    <img class="title_arow" src="./source/img/left-arrow.svg" alt="arow">
+                    <img class="title_arow" src="./source/img/left-arrow.svg" alt="arow">
                     SAMPLE <span class="section__color-word">WORKS</span>
-                    <img class="title_arow" src="./source/img/right-arrow.svg">
-                    <img class="title_arow" src="./source/img/right-arrow.svg">
+                    <img class="title_arow" src="./source/img/right-arrow.svg" alt="arow">
+                    <img class="title_arow" src="./source/img/right-arrow.svg" alt="arow">
                 </h2>
                 <h3 class="section__subtitle">
                     Let's take a look at some of the best of our works here, we love them and hope you too
@@ -408,85 +411,85 @@
                     <div class="galery_item">
                         <div class="galery_content">
                             <div class="galery_icon">
-                                <img class="galery_icon1" src="./source/img/share.svg">
-                                <img class="galery_icon1" src="./source/img/loupe.svg">
+                                <img class="galery_icon1" alt="share" src="./source/img/share.svg">
+                                <img class="galery_icon1" alt="search" src="./source/img/loupe.svg">
                             </div>
                             <h4 class="galery_name">Corporate Brochure</h4>
                             <h5 class="galery_ganre">Illustration / Print</h5>
-                            <h6 class="galery_like">&#10084 138</h6>
+                            <h6 class="galery_like">&#10084; 138</h6>
                         </div>
                         <div class="galery_img">
-                            <img class="section__Gallery_img" src="./source/img/Galery/Img-1.jpg">
+                            <img class="section__Gallery_img" alt="Gallery pictures" src="./source/img/Galery/Img-1.jpg">
                         </div>
                     </div>
                     <div class="galery_item">
                         <div class="galery_content">
                             <div class="galery_icon">
-                                <img class="galery_icon1" src="./source/img/share.svg">
-                                <img class="galery_icon1" src="./source/img/loupe.svg">
+                                <img class="galery_icon1" alt="share" src="./source/img/share.svg">
+                                <img class="galery_icon1" alt="search" src="./source/img/loupe.svg">
                             </div>
                             <h4 class="galery_name">Corporate Brochure</h4>
                             <h5 class="galery_ganre">Illustration / Print</h5>
-                            <h6 class="galery_like">&#10084 138</h6>
+                            <h6 class="galery_like">&#10084; 138</h6>
                         </div>
                         <div class="galery_img">
-                            <img class="section__Gallery_img" src="./source/img/Galery/Img-2.jpg">
+                            <img class="section__Gallery_img" alt="Gallery pictures" src="./source/img/Galery/Img-2.jpg">
                         </div>
                     </div>
                     <div class="galery_item">
                         <div class="galery_content">
                             <div class="galery_icon">
-                                <img class="galery_icon1" src="./source/img/share.svg">
-                                <img class="galery_icon1" src="./source/img/loupe.svg">
+                                <img class="galery_icon1" alt="share" src="./source/img/share.svg">
+                                <img class="galery_icon1" alt="search" src="./source/img/loupe.svg">
                             </div>
                             <h4 class="galery_name">Corporate Brochure</h4>
                             <h5 class="galery_ganre">Illustration / Print</h5>
-                            <h6 class="galery_like">&#10084 138</h6>
+                            <h6 class="galery_like">&#10084; 138</h6>
                         </div>
                         <div class="galery_img">
-                            <img class="section__Gallery_img" src="./source/img/Galery/Img-3.jpg">
+                            <img class="section__Gallery_img" alt="Gallery pictures" src="./source/img/Galery/Img-3.jpg">
                         </div>
                     </div>
                     <div class="galery_item">
                         <div class="galery_content">
                             <div class="galery_icon">
-                                <img class="galery_icon1" src="./source/img/share.svg">
-                                <img class="galery_icon1" src="./source/img/loupe.svg">
+                                <img class="galery_icon1" alt="share" src="./source/img/share.svg">
+                                <img class="galery_icon1" alt="search" src="./source/img/loupe.svg">
                             </div>
                             <h4 class="galery_name">Corporate Brochure</h4>
                             <h5 class="galery_ganre">Illustration / Print</h5>
-                            <h6 class="galery_like">&#10084 138</h6>
+                            <h6 class="galery_like">&#10084; 138</h6>
                         </div>
                         <div class="galery_img">
-                            <img class="section__Gallery_img" src="./source/img/Galery/Img-4.jpg">
+                            <img class="section__Gallery_img" alt="Gallery pictures" src="./source/img/Galery/Img-4.jpg">
                         </div>
                     </div>
                     <div class="galery_item">
                         <div class="galery_content">
                             <div class="galery_icon">
-                                <img class="galery_icon1" src="./source/img/share.svg">
-                                <img class="galery_icon1" src="./source/img/loupe.svg">
+                                <img class="galery_icon1" alt="share" src="./source/img/share.svg">
+                                <img class="galery_icon1" alt="search" src="./source/img/loupe.svg">
                             </div>
                             <h4 class="galery_name">Corporate Brochure</h4>
                             <h5 class="galery_ganre">Illustration / Print</h5>
-                            <h6 class="galery_like">&#10084 138</h6>
+                            <h6 class="galery_like">&#10084; 138</h6>
                         </div>
                         <div class="galery_img">
-                            <img class="section__Gallery_img" src="./source/img/Galery/Img-5.jpg">
+                            <img class="section__Gallery_img" alt="Gallery pictures" src="./source/img/Galery/Img-5.jpg">
                         </div>
                     </div>
                     <div class="galery_item">
                         <div class="galery_content">
                             <div class="galery_icon">
-                                <img class="galery_icon1" src="./source/img/share.svg">
-                                <img class="galery_icon1" src="./source/img/loupe.svg">
+                                <img class="galery_icon1" alt="share" src="./source/img/share.svg">
+                                <img class="galery_icon1" alt="search" src="./source/img/loupe.svg">
                             </div>
                             <h4 class="galery_name">Corporate Brochure</h4>
                             <h5 class="galery_ganre">Illustration / Print</h5>
-                            <h6 class="galery_like">&#10084 138</h6>
+                            <h6 class="galery_like">&#10084; 138</h6>
                         </div>
                         <div class="galery_img">
-                            <img class="section__Gallery_img" src="./source/img/Galery/Img-6.jpg">
+                            <img class="section__Gallery_img" alt="Gallery pictures" src="./source/img/Galery/Img-6.jpg">
                         </div>
                     </div>
                 </div>
@@ -494,85 +497,85 @@
                     <div class="galery_item">
                         <div class="galery_content">
                             <div class="galery_icon">
-                                <img class="galery_icon1" src="./source/img/share.svg">
-                                <img class="galery_icon1" src="./source/img/loupe.svg">
+                                <img class="galery_icon1" alt="share" src="./source/img/share.svg">
+                                <img class="galery_icon1" alt="search" src="./source/img/loupe.svg">
                             </div>
                             <h4 class="galery_name">Corporate Brochure</h4>
                             <h5 class="galery_ganre">Illustration / Print</h5>
-                            <h6 class="galery_like">&#10084 138</h6>
+                            <h6 class="galery_like">&#10084; 138</h6>
                         </div>
                         <div class="galery_img">
-                            <img class="section__Gallery_img" src="./source/img/Galery/Img-7.jpg">
+                            <img class="section__Gallery_img" alt="Gallery pictures" src="./source/img/Galery/Img-7.jpg">
                         </div>
                     </div>
                     <div class="galery_item">
                         <div class="galery_content">
                             <div class="galery_icon">
-                                <img class="galery_icon1" src="./source/img/share.svg">
-                                <img class="galery_icon1" src="./source/img/loupe.svg">
+                                <img class="galery_icon1" alt="share" src="./source/img/share.svg">
+                                <img class="galery_icon1" alt="search" src="./source/img/loupe.svg">
                             </div>
                             <h4 class="galery_name">Corporate Brochure</h4>
                             <h5 class="galery_ganre">Illustration / Print</h5>
-                            <h6 class="galery_like">&#10084 138</h6>
+                            <h6 class="galery_like">&#10084; 138</h6>
                         </div>
                         <div class="galery_img">
-                            <img class="section__Gallery_img" src="./source/img/Galery/Img-8.jpg">
+                            <img class="section__Gallery_img" alt="Gallery pictures" src="./source/img/Galery/Img-8.jpg">
                         </div>
                     </div>
                     <div class="galery_item">
                         <div class="galery_content">
                             <div class="galery_icon">
-                                <img class="galery_icon1" src="./source/img/share.svg">
-                                <img class="galery_icon1" src="./source/img/loupe.svg">
+                                <img class="galery_icon1" alt="share" src="./source/img/share.svg">
+                                <img class="galery_icon1" alt="search" src="./source/img/loupe.svg">
                             </div>
                             <h4 class="galery_name">Corporate Brochure</h4>
                             <h5 class="galery_ganre">Illustration / Print</h5>
-                            <h6 class="galery_like">&#10084 138</h6>
+                            <h6 class="galery_like">&#10084; 138</h6>
                         </div>
                         <div class="galery_img">
-                            <img class="section__Gallery_img" src="./source/img/Galery/Img-9.jpg">
+                            <img class="section__Gallery_img" alt="Gallery pictures" src="./source/img/Galery/Img-9.jpg">
                         </div>
                     </div>
                     <div class="galery_item">
                         <div class="galery_content">
                             <div class="galery_icon">
-                                <img class="galery_icon1" src="./source/img/share.svg">
-                                <img class="galery_icon1" src="./source/img/loupe.svg">
+                                <img class="galery_icon1" alt="share" src="./source/img/share.svg">
+                                <img class="galery_icon1" alt="search" src="./source/img/loupe.svg">
                             </div>
                             <h4 class="galery_name">Corporate Brochure</h4>
                             <h5 class="galery_ganre">Illustration / Print</h5>
-                            <h6 class="galery_like">&#10084 138</h6>
+                            <h6 class="galery_like">&#10084; 138</h6>
                         </div>
                         <div class="galery_img">
-                            <img class="section__Gallery_img" src="./source/img/Galery/Img-10.jpg">
+                            <img class="section__Gallery_img" alt="Gallery pictures" src="./source/img/Galery/Img-10.jpg">
                         </div>
                     </div>
                     <div class="galery_item">
                         <div class="galery_content">
                             <div class="galery_icon">
-                                <img class="galery_icon1" src="./source/img/share.svg">
-                                <img class="galery_icon1" src="./source/img/loupe.svg">
+                                <img class="galery_icon1" alt="share" src="./source/img/share.svg">
+                                <img class="galery_icon1" alt="search" src="./source/img/loupe.svg">
                             </div>
                             <h4 class="galery_name">Corporate Brochure</h4>
                             <h5 class="galery_ganre">Illustration / Print</h5>
-                            <h6 class="galery_like">&#10084 138</h6>
+                            <h6 class="galery_like">&#10084; 138</h6>
                         </div>
                         <div class="galery_img">
-                            <img class="section__Gallery_img" src="./source/img/Galery/Img-11.jpg">
+                            <img class="section__Gallery_img" alt="Gallery pictures" src="./source/img/Galery/Img-11.jpg">
                         </div>
                     </div>
                     <div class="galery_item">
                         <div class="galery_content">
                             <div class="galery_icon">
-                                <img class="galery_icon1" src="./source/img/share.svg">
-                                <img class="galery_icon1" src="./source/img/loupe.svg">
+                                <img class="galery_icon1" alt="share" src="./source/img/share.svg">
+                                <img class="galery_icon1" alt="search" src="./source/img/loupe.svg">
                             </div>
                             <h4 class="galery_name">Corporate Brochure</h4>
                             <h5 class="galery_ganre">Illustration / Print</h5>
-                            <h6 class="galery_like">&#10084 138</h6>
+                            <h6 class="galery_like">&#10084; 138</h6>
                         </div>
                         <div class="galery_img">
-                            <img class="section__Gallery_img" src="./source/img/Galery/Img-1.jpg">
+                            <img class="section__Gallery_img" alt="Gallery pictures" src="./source/img/Galery/Img-1.jpg">
                         </div>
                     </div>
                 </div>
@@ -582,85 +585,85 @@
                     <div class="galery_item">
                         <div class="galery_content">
                             <div class="galery_icon">
-                                <img class="galery_icon1" src="./source/img/share.svg">
-                                <img class="galery_icon1" src="./source/img/loupe.svg">
+                                <img class="galery_icon1" alt="share" src="./source/img/share.svg">
+                                <img class="galery_icon1" alt="search" src="./source/img/loupe.svg">
                             </div>
                             <h4 class="galery_name">Corporate Brochure</h4>
                             <h5 class="galery_ganre">Illustration / Print</h5>
-                            <h6 class="galery_like">&#10084 138</h6>
+                            <h6 class="galery_like">&#10084; 138</h6>
                         </div>
                         <div class="galery_img">
-                            <img class="section__Gallery_img" src="./source/img/Galery/Img-1.jpg">
+                            <img class="section__Gallery_img" alt="Gallery pictures" src="./source/img/Galery/Img-1.jpg">
                         </div>
                     </div>
                     <div class="galery_item">
                         <div class="galery_content">
                             <div class="galery_icon">
-                                <img class="galery_icon1" src="./source/img/share.svg">
-                                <img class="galery_icon1" src="./source/img/loupe.svg">
+                                <img class="galery_icon1" alt="share" src="./source/img/share.svg">
+                                <img class="galery_icon1" alt="search" src="./source/img/loupe.svg">
                             </div>
                             <h4 class="galery_name">Corporate Brochure</h4>
                             <h5 class="galery_ganre">Illustration / Print</h5>
-                            <h6 class="galery_like">&#10084 138</h6>
+                            <h6 class="galery_like">&#10084; 138</h6>
                         </div>
                         <div class="galery_img">
-                            <img class="section__Gallery_img" src="./source/img/Galery/Img-2.jpg">
+                            <img class="section__Gallery_img" alt="Gallery pictures" src="./source/img/Galery/Img-2.jpg">
                         </div>
                     </div>
                     <div class="galery_item">
                         <div class="galery_content">
                             <div class="galery_icon">
-                                <img class="galery_icon1" src="./source/img/share.svg">
-                                <img class="galery_icon1" src="./source/img/loupe.svg">
+                                <img class="galery_icon1" alt="share" src="./source/img/share.svg">
+                                <img class="galery_icon1" alt="search" src="./source/img/loupe.svg">
                             </div>
                             <h4 class="galery_name">Corporate Brochure</h4>
                             <h5 class="galery_ganre">Illustration / Print</h5>
-                            <h6 class="galery_like">&#10084 138</h6>
+                            <h6 class="galery_like">&#10084; 138</h6>
                         </div>
                         <div class="galery_img">
-                            <img class="section__Gallery_img" src="./source/img/Galery/Img-3.jpg">
+                            <img class="section__Gallery_img" alt="Gallery pictures" src="./source/img/Galery/Img-3.jpg">
                         </div>
                     </div>
                     <div class="galery_item">
                         <div class="galery_content">
                             <div class="galery_icon">
-                                <img class="galery_icon1" src="./source/img/share.svg">
-                                <img class="galery_icon1" src="./source/img/loupe.svg">
+                                <img class="galery_icon1" alt="share" src="./source/img/share.svg">
+                                <img class="galery_icon1" alt="search" src="./source/img/loupe.svg">
                             </div>
                             <h4 class="galery_name">Corporate Brochure</h4>
                             <h5 class="galery_ganre">Illustration / Print</h5>
-                            <h6 class="galery_like">&#10084 138</h6>
+                            <h6 class="galery_like">&#10084; 138</h6>
                         </div>
                         <div class="galery_img">
-                            <img class="section__Gallery_img" src="./source/img/Galery/Img-4.jpg">
+                            <img class="section__Gallery_img" alt="Gallery pictures" src="./source/img/Galery/Img-4.jpg">
                         </div>
                     </div>
                     <div class="galery_item">
                         <div class="galery_content">
                             <div class="galery_icon">
-                                <img class="galery_icon1" src="./source/img/share.svg">
-                                <img class="galery_icon1" src="./source/img/loupe.svg">
+                                <img class="galery_icon1" alt="share" src="./source/img/share.svg">
+                                <img class="galery_icon1" alt="search" src="./source/img/loupe.svg">
                             </div>
                             <h4 class="galery_name">Corporate Brochure</h4>
                             <h5 class="galery_ganre">Illustration / Print</h5>
-                            <h6 class="galery_like">&#10084 138</h6>
+                            <h6 class="galery_like">&#10084; 138</h6>
                         </div>
                         <div class="galery_img">
-                            <img class="section__Gallery_img" src="./source/img/Galery/Img-5.jpg">
+                            <img class="section__Gallery_img" alt="Gallery pictures" src="./source/img/Galery/Img-5.jpg">
                         </div>
                     </div>
                     <div class="galery_item">
                         <div class="galery_content">
                             <div class="galery_icon">
-                                <img class="galery_icon1" src="./source/img/share.svg">
-                                <img class="galery_icon1" src="./source/img/loupe.svg">
+                                <img class="galery_icon1" alt="share" src="./source/img/share.svg">
+                                <img class="galery_icon1" alt="search" src="./source/img/loupe.svg">
                             </div>
                             <h4 class="galery_name">Corporate Brochure</h4>
                             <h5 class="galery_ganre">Illustration / Print</h5>
-                            <h6 class="galery_like">&#10084 138</h6>
+                            <h6 class="galery_like">&#10084; 138</h6>
                         </div>
                         <div class="galery_img">
-                            <img class="section__Gallery_img" src="./source/img/Galery/Img-6.jpg">
+                            <img class="section__Gallery_img" alt="Gallery pictures" src="./source/img/Galery/Img-6.jpg">
                         </div>
                     </div>
                 </div>
@@ -668,85 +671,85 @@
                     <div class="galery_item">
                         <div class="galery_content">
                             <div class="galery_icon">
-                                <img class="galery_icon1" src="./source/img/share.svg">
-                                <img class="galery_icon1" src="./source/img/loupe.svg">
+                                <img class="galery_icon1" alt="share" src="./source/img/share.svg">
+                                <img class="galery_icon1" alt="search" src="./source/img/loupe.svg">
                             </div>
                             <h4 class="galery_name">Corporate Brochure</h4>
                             <h5 class="galery_ganre">Illustration / Print</h5>
-                            <h6 class="galery_like">&#10084 138</h6>
+                            <h6 class="galery_like">&#10084; 138</h6>
                         </div>
                         <div class="galery_img">
-                            <img class="section__Gallery_img" src="./source/img/Galery/Img-7.jpg">
+                            <img class="section__Gallery_img" alt="Gallery pictures" src="./source/img/Galery/Img-7.jpg">
                         </div>
                     </div>
                     <div class="galery_item">
                         <div class="galery_content">
                             <div class="galery_icon">
-                                <img class="galery_icon1" src="./source/img/share.svg">
-                                <img class="galery_icon1" src="./source/img/loupe.svg">
+                                <img class="galery_icon1" alt="share" src="./source/img/share.svg">
+                                <img class="galery_icon1" alt="search" src="./source/img/loupe.svg">
                             </div>
                             <h4 class="galery_name">Corporate Brochure</h4>
                             <h5 class="galery_ganre">Illustration / Print</h5>
-                            <h6 class="galery_like">&#10084 138</h6>
+                            <h6 class="galery_like">&#10084; 138</h6>
                         </div>
                         <div class="galery_img">
-                            <img class="section__Gallery_img" src="./source/img/Galery/Img-8.jpg">
+                            <img class="section__Gallery_img" alt="Gallery pictures" src="./source/img/Galery/Img-8.jpg">
                         </div>
                     </div>
                     <div class="galery_item">
                         <div class="galery_content">
                             <div class="galery_icon">
-                                <img class="galery_icon1" src="./source/img/share.svg">
-                                <img class="galery_icon1" src="./source/img/loupe.svg">
+                                <img class="galery_icon1" alt="share" src="./source/img/share.svg">
+                                <img class="galery_icon1" alt="search" src="./source/img/loupe.svg">
                             </div>
                             <h4 class="galery_name">Corporate Brochure</h4>
                             <h5 class="galery_ganre">Illustration / Print</h5>
-                            <h6 class="galery_like">&#10084 138</h6>
+                            <h6 class="galery_like">&#10084; 138</h6>
                         </div>
                         <div class="galery_img">
-                            <img class="section__Gallery_img" src="./source/img/Galery/Img-9.jpg">
+                            <img class="section__Gallery_img" alt="Gallery pictures" src="./source/img/Galery/Img-9.jpg">
                         </div>
                     </div>
                     <div class="galery_item">
                         <div class="galery_content">
                             <div class="galery_icon">
-                                <img class="galery_icon1" src="./source/img/share.svg">
-                                <img class="galery_icon1" src="./source/img/loupe.svg">
+                                <img class="galery_icon1" alt="share" src="./source/img/share.svg">
+                                <img class="galery_icon1" alt="search" src="./source/img/loupe.svg">
                             </div>
                             <h4 class="galery_name">Corporate Brochure</h4>
                             <h5 class="galery_ganre">Illustration / Print</h5>
-                            <h6 class="galery_like">&#10084 138</h6>
+                            <h6 class="galery_like">&#10084; 138</h6>
                         </div>
                         <div class="galery_img">
-                            <img class="section__Gallery_img" src="./source/img/Galery/Img-10.jpg">
+                            <img class="section__Gallery_img" alt="Gallery pictures" src="./source/img/Galery/Img-10.jpg">
                         </div>
                     </div>
                     <div class="galery_item">
                         <div class="galery_content">
                             <div class="galery_icon">
-                                <img class="galery_icon1" src="./source/img/share.svg">
-                                <img class="galery_icon1" src="./source/img/loupe.svg">
+                                <img class="galery_icon1" alt="share" src="./source/img/share.svg">
+                                <img class="galery_icon1" alt="search" src="./source/img/loupe.svg">
                             </div>
                             <h4 class="galery_name">Corporate Brochure</h4>
                             <h5 class="galery_ganre">Illustration / Print</h5>
-                            <h6 class="galery_like">&#10084 138</h6>
+                            <h6 class="galery_like">&#10084; 138</h6>
                         </div>
                         <div class="galery_img">
-                            <img class="section__Gallery_img" src="./source/img/Galery/Img-11.jpg">
+                            <img class="section__Gallery_img" alt="Gallery pictures" src="./source/img/Galery/Img-11.jpg">
                         </div>
                     </div>
                     <div class="galery_item">
                         <div class="galery_content">
                             <div class="galery_icon">
-                                <img class="galery_icon1" src="./source/img/share.svg">
-                                <img class="galery_icon1" src="./source/img/loupe.svg">
+                                <img class="galery_icon1" alt="share" src="./source/img/share.svg">
+                                <img class="galery_icon1" alt="search" src="./source/img/loupe.svg">
                             </div>
                             <h4 class="galery_name">Corporate Brochure</h4>
                             <h5 class="galery_ganre">Illustration / Print</h5>
-                            <h6 class="galery_like">&#10084 138</h6>
+                            <h6 class="galery_like">&#10084; 138</h6>
                         </div>
                         <div class="galery_img">
-                            <img class="section__Gallery_img" src="./source/img/Galery/Img-1.jpg">
+                            <img class="section__Gallery_img" alt="Gallery pictures" src="./source/img/Galery/Img-1.jpg">
                         </div>
                     </div>
                 </div>
@@ -755,17 +758,16 @@
             <div class="section__Gallery_btn-viev">
                 <a onclick="viewDiv()" class="section__Gallery_btn" id="section__Gallery_btn">VIEV ALL WORKS</a>
             </div>
-        </div>
     </section>
     <section class="section__Facts">
         <div class="container">
             <div class="section_main_title">
                 <h2 class="section__title_second">
-                    <img class="title_arow" src="./source/img/left-arrow.svg">
-                    <img class="title_arow" src="./source/img/left-arrow.svg">
+                    <img class="title_arow" src="./source/img/left-arrow.svg" alt="arow">
+                    <img class="title_arow" src="./source/img/left-arrow.svg" alt="arow">
                     COMPANY <span class="section__color-word">FACTS</span>
-                    <img class="title_arow" src="./source/img/right-arrow.svg">
-                    <img class="title_arow" src="./source/img/right-arrow.svg">
+                    <img class="title_arow" src="./source/img/right-arrow.svg" alt="arow">
+                    <img class="title_arow" src="./source/img/right-arrow.svg" alt="arow">
                 </h2>
                 <h3 class="section__subtitle_second">
                     We do love to work and increase our counter number, this is what we've done till now
@@ -830,11 +832,11 @@
         <div class="container">
             <div class="section__header">
                 <h2 class="section__title">
-                    <img class="title_arow" src="./source/img/left-arrow.svg">
-                    <img class="title_arow" src="./source/img/left-arrow.svg">
+                    <img class="title_arow" src="./source/img/left-arrow.svg" alt="arow">
+                    <img class="title_arow" src="./source/img/left-arrow.svg" alt="arow">
                     <span class="section__color-word">TEAM</span> MEMBERS
-                    <img class="title_arow" src="./source/img/right-arrow.svg">
-                    <img class="title_arow" src="./source/img/right-arrow.svg">
+                    <img class="title_arow" src="./source/img/right-arrow.svg" alt="arow">
+                    <img class="title_arow" src="./source/img/right-arrow.svg" alt="arow">
                 </h2>
                 <h3 class="section__subtitle">
                     We're some creative people with powerful knowledge & awesome skills behind the scene bringing you the bests
@@ -844,14 +846,14 @@
                 <div class="section__team_member">
                     <div class="member_item">
                         <div class="member_social">
-                            <img class="member_social_img" src="./source/img/facebook.svg">
-                            <img class="member_social_img" src="./source/img/twitter.svg">
-                            <img class="member_social_img" src="./source/img/google-plus-logo.svg">
-                            <img class="member_social_img" src="./source/img/viber.svg">
-                            <img class="member_social_img" src="./source/img/linkedin.svg">
+                            <img class="member_social_img" src="./source/img/facebook.svg" alt="facebook">
+                            <img class="member_social_img" src="./source/img/twitter.svg" alt="twitter">
+                            <img class="member_social_img" src="./source/img/google-plus-logo.svg" alt="google plus">
+                            <img class="member_social_img" src="./source/img/viber.svg" alt="viber">
+                            <img class="member_social_img" src="./source/img/linkedin.svg" alt="linkedin">
                         </div>
                         <div class="section__team_img">
-                            <img class="team_img" src="./source/img/TeamFoto-1.jpg">
+                            <img class="team_img" src="./source/img/TeamFoto-1.jpg" alt="Alexis Simpson">
                         </div>
                     </div>
                     <div class="section__team_content">
@@ -862,11 +864,11 @@
                         <h4 class="team_func">CEO & Developer</h4>
                     </div>
                     <div class="section__team_contact mail">
-                        <img class="mail__img" src="./source/img/email.svg">
+                        <img class="mail__img" src="./source/img/email.svg" alt="email">
                         <a class="tean_email" href="mailto:a.simpson@starturpp.com">a.simpson@starturpp.com</a>
                     </div>
                     <div class="section__team_contact">
-                        <img class="phone__img" src="./source/img/phone.svg">
+                        <img class="phone__img" src="./source/img/phone.svg" alt="phone">
                         <a class="team_tel" href="#">+1 911 (77) 222-1111</a>
                     </div>
                     </div>
@@ -874,14 +876,14 @@
                 <div class="section__team_member">
                     <div class="member_item">
                         <div class="member_social">
-                            <img class="member_social_img" src="./source/img/facebook.svg">
-                            <img class="member_social_img" src="./source/img/twitter.svg">
-                            <img class="member_social_img" src="./source/img/google-plus-logo.svg">
-                            <img class="member_social_img" src="./source/img/viber.svg">
-                            <img class="member_social_img" src="./source/img/linkedin.svg">
+                            <img class="member_social_img" src="./source/img/facebook.svg" alt="facebook">
+                            <img class="member_social_img" src="./source/img/twitter.svg" alt="twitter">
+                            <img class="member_social_img" src="./source/img/google-plus-logo.svg" alt="google plus">
+                            <img class="member_social_img" src="./source/img/viber.svg" alt="viber">
+                            <img class="member_social_img" src="./source/img/linkedin.svg" alt="linkedin">
                         </div>
                         <div class="section__team_img">
-                            <img class="team_img" src="./source/img/Team-Foto-2.jpg">
+                            <img class="team_img" src="./source/img/Team-Foto-2.jpg" alt="Steven Cole">
                         </div>
                     </div>
                     <div class="section__team_content">
@@ -892,11 +894,11 @@
                         <h4 class="team_func">User Interface Designer</h4>
                     </div>
                     <div class="section__team_contact mail">
-                        <img class="mail__img" src="./source/img/email.svg">
+                        <img class="mail__img" src="./source/img/email.svg" alt="email">
                         <a class="tean_email" href="mailto:s.colee@starturpp.com">s.colee@starturpp.com</a>
                     </div>
                     <div class="section__team_contact">
-                        <img class="phone__img" src="./source/img/phone.svg">
+                        <img class="phone__img" src="./source/img/phone.svg" alt="phone">
                         <a class="team_tel" href="#">+1 911 (77) 222-1111</a>
                     </div>
                     </div>  
@@ -904,14 +906,14 @@
                 <div class="section__team_member">
                     <div class="member_item">
                         <div class="member_social">
-                            <img class="member_social_img" src="./source/img/facebook.svg">
-                            <img class="member_social_img" src="./source/img/twitter.svg">
-                            <img class="member_social_img" src="./source/img/google-plus-logo.svg">
-                            <img class="member_social_img" src="./source/img/viber.svg">
-                            <img class="member_social_img" src="./source/img/linkedin.svg">
+                            <img class="member_social_img" src="./source/img/facebook.svg" alt="facebook">
+                            <img class="member_social_img" src="./source/img/twitter.svg" alt="twitter">
+                            <img class="member_social_img" src="./source/img/google-plus-logo.svg" alt="google plus">
+                            <img class="member_social_img" src="./source/img/viber.svg" alt="viber">
+                            <img class="member_social_img" src="./source/img/linkedin.svg" alt="linkedin">
                         </div>
                         <div class="section__team_img">
-                            <img class="team_img" src="./source/img/Team-Foto-3.jpg">
+                            <img class="team_img" src="./source/img/Team-Foto-3.jpg" alt="Frank Piener">
                         </div>
                     </div>
                     <div class="section__team_content">
@@ -922,11 +924,11 @@
                         <h4 class="team_func">Sales Manager</h4>
                     </div>
                     <div class="section__team_contact mail">
-                        <img class="mail__img" src="./source/img/email.svg">
+                        <img class="mail__img" src="./source/img/email.svg" alt="email">
                         <a class="tean_email" href="mailto:f.piener@starturpp.com">f.piener@starturpp.com</a>
                     </div>
                     <div class="section__team_contact">
-                        <img class="phone__img" src="./source/img/phone.svg">
+                        <img class="phone__img" src="./source/img/phone.svg" alt="phone">
                         <a class="team_tel" href="#">+1 911 (77) 222-1111</a>
                     </div>
                     </div>
@@ -934,14 +936,14 @@
                 <div class="section__team_member">
                     <div class="member_item">
                         <div class="member_social">
-                            <img class="member_social_img" src="./source/img/facebook.svg">
-                            <img class="member_social_img" src="./source/img/twitter.svg">
-                            <img class="member_social_img" src="./source/img/google-plus-logo.svg">
-                            <img class="member_social_img" src="./source/img/viber.svg">
-                            <img class="member_social_img" src="./source/img/linkedin.svg">
+                            <img class="member_social_img" src="./source/img/facebook.svg" alt="facebook">
+                            <img class="member_social_img" src="./source/img/twitter.svg" alt="twitter">
+                            <img class="member_social_img" src="./source/img/google-plus-logo.svg" alt="google plus">
+                            <img class="member_social_img" src="./source/img/viber.svg" alt="viber">
+                            <img class="member_social_img" src="./source/img/linkedin.svg" alt="linkedin">
                         </div>
                         <div class="section__team_img">
-                            <img class="team_img" src="./source/img/Team-Foto-4.jpg">
+                            <img class="team_img" src="./source/img/Team-Foto-4.jpg" alt="Ashley Lennon">
                         </div>
                     </div>
                     <div class="section__team_content">
@@ -952,11 +954,11 @@
                         <h4 class="team_func">IT Specialist</h4>
                     </div>
                     <div class="section__team_contact mail">
-                        <img class="mail__img" src="./source/img/email.svg">
+                        <img class="mail__img" src="./source/img/email.svg" alt="email">
                         <a class="tean_email" href="mailto:a.lennon@starturpp.com">a.lennon@starturpp.com</a>
                     </div>
                     <div class="section__team_contact">
-                        <img class="phone__img" src="./source/img/phone.svg">
+                        <img class="phone__img" src="./source/img/phone.svg" alt="phone">
                         <a class="team_tel" href="#">+1 911 (77) 222-1111</a>
                     </div>
                     </div>
@@ -974,7 +976,7 @@
                         </h4>
                     </div>
                     <div class="section__quotes_text">
-                        <p class="quotes_text"><span class="kov">&laquo</span> Lorem ipsum dolor sit amet, laudantium, totam rem. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo consequat magna, id molestie ipsum volutpat quis <span class="kov">&raquo</span></p>
+                        <p class="quotes_text"><span class="kov">&laquo;</span> Lorem ipsum dolor sit amet, laudantium, totam rem. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo consequat magna, id molestie ipsum volutpat quis <span class="kov">&raquo;</span></p>
                     </div>
                 </div>
                 <div class="quotes_content_2" id="quotes_content_2">
@@ -984,40 +986,41 @@
                         </h4>
                     </div>
                     <div class="section__quotes_text">
-                        <p class="quotes_text"><span class="kov">&laquo</span> Habitant blandit, interdum urna elit facilisi vel conubia risus, iaculis metus lectus leo fames. Pellentesque non lectus magna. Platea tellus. Consequat. Faucibus interdum ad quam vivamus tristique nascetur facilisis. Sodales. <span class="kov">&raquo</span></p>
+                        <p class="quotes_text"><span class="kov">&laquo;</span> Habitant blandit, interdum urna elit facilisi vel conubia risus, iaculis metus lectus leo fames. Pellentesque non lectus magna. Platea tellus. Consequat. Faucibus interdum ad quam vivamus tristique nascetur facilisis. Sodales. <span class="kov">&raquo;</span></p>
                     </div>
                 </div>
                 <div class="section__quotes_btn">
-                    <img onclick="viewQuotes()" class="quotes_btn" src="./source/img/left-arrow.svg">
-                    <img onclick="viewQuotes()" class="quotes_btn" src="./source/img/right-arrow.svg">
+                    <img onclick="viewQuotes()" class="quotes_btn" src="./source/img/left-arrow.svg" alt="left">
+                    <img onclick="viewQuotes()" class="quotes_btn" src="./source/img/right-arrow.svg" alt="right">
                 </div>
             </div>
         </div>
     </section>
     <section class="section__karusel">
         <div class="container">
+            <h2 class="Empty">_</h2>
             <div id="karusel" class="karusel">
                 <div class="karusel_main">
-                    <img onclick="previousSlide()" id="karusel_btn_pre" class="karusel_btn" src="./source/img/left-arrow.svg">
-                    <img class="karusel_img" src="./source/img/Karusel.jpg">
-                    <img class="karusel_img" src="./source/img/Karusel.jpg">
-                    <img class="karusel_img" src="./source/img/Karusel.jpg">
-                    <img class="karusel_img" src="./source/img/Karusel.jpg">
-                    <img onclick="nextSlide()" id="karusel_btn_next" class="karusel_btn" src="./source/img/right-arrow.svg">
+                    <img onclick="previousSlide()" id="karusel_btn_pre" class="karusel_btn" src="./source/img/left-arrow.svg" alt="left">
+                    <img class="karusel_img" src="./source/img/Karusel.jpg" alt="Company">
+                    <img class="karusel_img" src="./source/img/Karusel.jpg" alt="Company">
+                    <img class="karusel_img" src="./source/img/Karusel.jpg" alt="Company">
+                    <img class="karusel_img" src="./source/img/Karusel.jpg" alt="Company">
+                    <img onclick="nextSlide()" id="karusel_btn_next" class="karusel_btn" src="./source/img/right-arrow.svg" alt="right">
                 </div>
             </div>
         </div>
     </section>
     <section class="section__price">
-        <a name="Prices"></a>
+        <a id="Prices"></a>
         <div class="container">
             <div class="section__header">
                 <h2 class="section__title">
-                    <img class="title_arow" src="./source/img/left-arrow.svg">
-                    <img class="title_arow" src="./source/img/left-arrow.svg">
+                    <img class="title_arow" src="./source/img/left-arrow.svg" alt="arow">
+                    <img class="title_arow" src="./source/img/left-arrow.svg" alt="arow">
                      REAL CHEAP <span class="section__color-word">PRICES</span>
-                    <img class="title_arow" src="./source/img/right-arrow.svg">
-                    <img class="title_arow" src="./source/img/right-arrow.svg">
+                    <img class="title_arow" src="./source/img/right-arrow.svg" alt="arow">
+                    <img class="title_arow" src="./source/img/right-arrow.svg" alt="arow">
                 </h2>
                 <h3 class="section__subtitle">
                     We offer all our services in real low prices in comparison with similar companies
@@ -1115,44 +1118,45 @@
         <div class="container">
             <div class="reklama_flex">
                 <div class="reklama">
-                    <img class="reklama_img" src="./source/img/ManThumb.png">
-                    <h3 class="reklama_text">STARTUPRR! We Do <span class="heart">&#10084</span> It And Hope You Too</h3>
+                    <img class="reklama_img" src="./source/img/ManThumb.png" alt="Man">
+                    <h3 class="reklama_text">STARTUPRR! We Do <span class="heart">&#10084;</span> It And Hope You Too</h3>
                 </div>
                 <div class="reklama_btn">
                     <a class="reklama_btn1" href="#">PURCASE IT NOW</a>
-                    <img class="reklama_ico" src="./source/img/shopping-cart.svg">
+                    <img class="reklama_ico" src="./source/img/shopping-cart.svg" alt="shopping cart">
                 </div>
             </div>
         </div>
     </section>
     <section class="Futer">
-        <a name="Contact"></a>
+        <a id="Contact"></a>
         <div class="container">
             <div class="Futer_main">
                 <div class="Futer_logo">
-                    <img class="Futer_logo__icon" src="./source/img/Logo.png">
+                    <img class="Futer_logo__icon" src="./source/img/Logo.png" alt="Logo">
                     <h6 class="Logo_name">STARTUPRR</h6>
                 </div>
                 <div class="Futer_social">
-                    <img class="Futer_social_img" src="./source/img/Futer_Social/dribbble-logo.svg">
-                    <img class="Futer_social_img" src="./source/img/Futer_Social/facebook-logo.svg">
-                    <img class="Futer_social_img" src="./source/img/Futer_Social/google-plus-social-logotype.svg">
-                    <img class="Futer_social_img" src="./source/img/Futer_Social/instagram-social-network-logo-of-photo-camera.svg">
-                    <img class="Futer_social_img" src="./source/img/Futer_Social/linkedin-logo.svg">
-                    <img class="Futer_social_img" src="./source/img/Futer_Social/pinterest-social-logo.svg">
-                    <img class="Futer_social_img" src="./source/img/Futer_Social/reddit-social-logo-character.svg">
-                    <img class="Futer_social_img" src="./source/img/Futer_Social/spotify-logo.svg">
-                    <img class="Futer_social_img" src="./source/img/Futer_Social/twitter-social-logotype.svg">
-                    <img class="Futer_social_img" src="./source/img/Futer_Social/vimeo-social-logo.svg">
-                    <img class="Futer_social_img" src="./source/img/Futer_Social/youtube-logotype.svg">
+                    <img class="Futer_social_img" src="./source/img/Futer_Social/dribbble-logo.svg" alt="dribbble">
+                    <img class="Futer_social_img" src="./source/img/Futer_Social/facebook-logo.svg" alt="facebook">
+                    <img class="Futer_social_img" src="./source/img/Futer_Social/google-plus-social-logotype.svg" alt="google plus">
+                    <img class="Futer_social_img" src="./source/img/Futer_Social/instagram-social-network-logo-of-photo-camera.svg" alt="instagram">
+                    <img class="Futer_social_img" src="./source/img/Futer_Social/linkedin-logo.svg" alt="linkedin">
+                    <img class="Futer_social_img" src="./source/img/Futer_Social/pinterest-social-logo.svg" alt="pinterest">
+                    <img class="Futer_social_img" src="./source/img/Futer_Social/reddit-social-logo-character.svg" alt="reddit">
+                    <img class="Futer_social_img" src="./source/img/Futer_Social/spotify-logo.svg" alt="spotify">
+                    <img class="Futer_social_img" src="./source/img/Futer_Social/twitter-social-logotype.svg" alt="twitter">
+                    <img class="Futer_social_img" src="./source/img/Futer_Social/vimeo-social-logo.svg" alt="vimeo">
+                    <img class="Futer_social_img" src="./source/img/Futer_Social/youtube-logotype.svg" alt="youtube">
                 </div>
             </div>
         </div>
     </section>
     <section class="Map" id="Map">
         <div class="container">
+            <h2 class="Empty">_</h2>
             <div class="Map_main">
-                <iframe class="Map__main" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2676.9047218232095!2d35.099402550918484!3d47.860808479100264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc66c5993fb603%3A0xb8feffbc3965f304!2z0JfQsNC_0L7RgNC-0LbRgdC60LDRjyDQk9C-0YHRg9C00LDRgNGB0YLQstC10L3QvdCw0Y8g0JjQvdC20LXQvdC10YDQvdCw0Y8g0JDQutCw0LTQtdC80LjRjyAo0JfQk9CY0JAp!5e0!3m2!1sru!2sua!4v1618439361457!5m2!1sru!2sua" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe class="Map__main" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2676.9047218232095!2d35.099402550918484!3d47.860808479100264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc66c5993fb603%3A0xb8feffbc3965f304!2z0JfQsNC_0L7RgNC-0LbRgdC60LDRjyDQk9C-0YHRg9C00LDRgNGB0YLQstC10L3QvdCw0Y8g0JjQvdC20LXQvdC10YDQvdCw0Y8g0JDQutCw0LTQtdC80LjRjyAo0JfQk9CY0JAp!5e0!3m2!1sru!2sua!4v1618439361457!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
@@ -1160,7 +1164,14 @@
         <div class="container">
             <div class="Down__Futer_main">
                 <a class="Map_btn" onclick="viewMap()">Show map</a>
-                <h5 class="Down__Futer_text">Copyright &copy 2021 startuprr, All Rights Reserved.</h5>
+                <p class="W3_CSS">
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border:0;width:88px;height:31px"
+                            src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                            alt="Правильный CSS!" />
+                    </a>
+                </p>
+                <h5 class="Down__Futer_text">Copyright &copy; 2021 startuprr, All Rights Reserved.</h5>
             </div>
         </div>
     </section>
