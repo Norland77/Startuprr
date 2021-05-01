@@ -2,7 +2,7 @@
 function viewDiv(){
   const btn = document.querySelector('.section__Gallery_btn');
 
-  if (document.getElementById("gallery_hiden").style.display == "block")
+  if (document.getElementById("gallery_hiden").style.display == "grid")
   {
     document.getElementById("gallery_hiden").style.display = "none";
     document.getElementById("gallery_hiden").style.transitionDuration = "0.3s";
@@ -11,7 +11,7 @@ function viewDiv(){
   }
   else
   {
-    document.getElementById("gallery_hiden").style.display = "block";
+    document.getElementById("gallery_hiden").style.display = "grid";
     document.getElementById("gallery_hiden").style.transitionDuration = "0.3s";
     document.getElementById("section__Gallery_imggroup").style.marginBottom = "0px";
     btn.innerHTML = ('SHOW WORKS')

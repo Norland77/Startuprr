@@ -106,7 +106,7 @@ h6 {
 .intro__icon {
     width: 50px;
     height: 50px;
-    margin-left: 190px;
+    margin-left: 45%;
 }
 
 /*HEADER*/
@@ -459,10 +459,10 @@ h6 {
     padding: 4%;
 }
 
-.section__advantages_top,
-.section__advantages_bottom {
-    display: flex;
-    justify-content: center;
+.section__advantages_main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .section__advantages_iner {
@@ -516,9 +516,9 @@ h6 {
 
 .section__skills_content {
     width: 100%;
-    display: inline-flex;
-    justify-content: center;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
 }
 
 .section__skills_number {
@@ -564,11 +564,6 @@ h6 {
     width: 100%;
 }
 
-.section__skills_items_up,
-.section__skills_items_down {
-    display: inline-flex;
-}
-
 .percent {
     font-size: 15px;
     font-weight: normal;
@@ -584,23 +579,20 @@ h6 {
 #section__Gallery_imggroup {
     margin-top: 50px;
     margin-bottom: 26px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
-.section__Gallery_top {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.section__Galery_botom {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.gallery_hiden {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .galery_item {
     width: 100%;
-    height: 58%;
+    height: 98%;
     margin: 1px;
     justify-content: center;
     text-align: center;
@@ -793,6 +785,7 @@ h6 {
     justify-content: center;
     text-align: center;
     background: #00a99d;
+    position: relative;
 }
 
 .member_social_img {
@@ -801,7 +794,6 @@ h6 {
 
 .member_social {
     margin-top: 100px;
-    width: 23%;
     position: absolute;
     opacity: 0;
 }
@@ -818,15 +810,16 @@ h6 {
 
 .section__team_members {
     width: 100%;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 3px;
     margin-top: 25px;
 }
 
 .section__team_member {
     width: 100%;
     text-align: center;
-    margin: 13px;
 }
 
 .section__team_content {
@@ -842,7 +835,7 @@ h6 {
 }
 
 .section__team_img {
-    padding-bottom: 0px;
+    width: 100;
 }
 
 .team_img {
@@ -1249,7 +1242,8 @@ sup {
 }
 
 .Futer_social_img {
-    width: 3%;
+    width: 40px;
+    height: 40px;
     padding: 3px;
     margin: 3px;
     border-width: 1px;
@@ -1279,8 +1273,8 @@ sup {
 }
 
 .Futer_logo__icon {
-    width: 3%;
-    height: 1%;
+    width: 25px;
+    height: 25px;
 }
 
 .heart {
@@ -1333,13 +1327,7 @@ sup {
 
 @media (max-width: 1200px) {
     .container {
-        max-width: 970px;
-    }
-}
-
-@media (max-width: 1190px) {
-    .container {
-        max-width: 1030px;
+        max-width: 1150px;
     }
 }
 
@@ -1395,24 +1383,43 @@ sup {
     .section__Facts_content_down {
         flex-wrap: wrap;
     }
+
+    .feature__content {
+        display: flex;
+    }
 }
 
 @media (max-width: 992px) {
     .container {
-        max-width: 750px;
-    }
-
-    .section__skills_content {
-        display: block;
-    }
-
-    .section__skills_items {
-        display: flex;
-        justify-content: center;
+        max-width: 900px;
     }
 
     .nav {
         margin-left: 10%;
+    }
+
+    #section__Gallery_imggroup {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .gallery_hiden {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .section__team_members {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .section__skills_content {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    #karusel_img_4 {
+        display: none;
     }
 
 }
@@ -1442,10 +1449,6 @@ sup {
 
     .galery_ganre {
         font-size: 6px;
-    }
-
-    .member_social {
-        width: 100%;
     }
 
     .burger {
@@ -1505,12 +1508,35 @@ sup {
         display: none;
     }
 
+    .section__advantages_main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
 
+    .feature__content {
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    #karusel_img_3 {
+        display: none;
+    }
+
+    .Futer_social_img {
+        width: 25px;
+        height: 25px;
+    }
 }
 
 @media (max-width: 610px) {
     .intro__iner {
         margin-left: 0%;
+    }
+
+    .section__team_members {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
     }
 }
 
@@ -1542,10 +1568,6 @@ sup {
     .popup_3 {
         width: 90%;
         margin-left: 5%;
-    }
-
-    .galery_content {
-        display: none;
     }
 
     .information_line_text {
@@ -1595,10 +1617,58 @@ sup {
         margin-right: 1%;
         text-align: center;
     }
+
+    .section__skills_content {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .section__advantages_main {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
+
+@media (max-width: 490px) {
+    #section__Gallery_imggroup {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .gallery_hiden {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    #karusel_img_2 {
+        display: none;
+    }
 }
 
 @media (max-width: 420px) {
     .title_arow {
         display: none;
+    }
+
+    #section__Gallery_imggroup {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+    }
+
+    .gallery_hiden {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+    }
+
+    .section__skills_content {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
+
+@media (max-width: 350px) {
+    .Futer_social_img {
+        width: 20px;
+        height: 20px;
     }
 }
