@@ -109,17 +109,36 @@ function HideScrol() {
 
 //Burger
 
-function Burger() {
-  if (document.getElementsById("nav").style.display == "none")
+/*function Burger() {
+  if (document.getElementById("nav").style.display == "none")
   {
-    document.getElementsById("nav").style.display == "block"
-    document.getElementsById("nav").style.opacity == "1"
-    document.getElementsById("nav").style.transitionDuration = "0.5s";
+    document.getElementById("nav").style.display == "none"
+    document.getElementById("nav").style.opacity == "0"
+    document.getElementById("nav").style.transitionDuration = "0.5s";
+    document.getElementById("logo").style.display = "flex";
   }
   else
   {
-    document.getElementsById("nav").style.display == "none"
-    document.getElementsById("nav").style.opacity == "0"
-    document.getElementsById("nav").style.transitionDuration = "0.5s";
+    document.getElementById("nav").style.display == "flex"
+    document.getElementById("nav").style.opacity == "1"
+    document.getElementById("nav").style.transitionDuration = "0.5s";
+    document.getElementById("logo").style.display = "none";
+  }
+};*/
+
+function Burger() {
+  if (document.getElementById("nav").style.display == "flex")
+  {
+    document.getElementById("nav").style.display = "none"
+    document.getElementById("nav").style.opacity = "0"
+    document.getElementById("nav").style.transitionDuration = "0.5s";
+    document.getElementById("logo").style.display = "flex";
+  }
+  else
+  {
+    document.getElementById("nav").style.display = "flex"
+    document.getElementById("nav").style.opacity = "1"
+    document.getElementById("nav").style.transitionDuration = "0.5s";
+    document.getElementById("logo").style.display = "none";
   }
 };
