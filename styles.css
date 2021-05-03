@@ -1054,7 +1054,123 @@ h6 {
 .section__price {
     text-align: center;
     padding: 5.7% 0 5.7% 0;
+    position: relative;
 
+}
+
+.price__form-pay {
+    width: 50%;
+    background: #5d5d5d;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    text-align: center;
+    border-radius: 25px/18px;
+    padding: 4% 0 4% 0;
+}
+
+.pay_close {
+    font-size: 25px;
+    text-decoration: none;
+    color: #373737;
+    position: absolute;
+    left: 93%;
+    top: 5%;
+}
+
+#Form_pay_1 {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#Form_pay_2 {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#Form_pay_3 {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#Form_pay_4 {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#Form_pay_1:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+#Form_pay_2:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+#Form_pay_3:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+#Form_pay_4:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.form-pay_lable {
+    font-size: 25px;
+    margin-bottom: 10%;
+}
+
+.form-pay_content {
+    display: flex;
+    justify-content: center;
+}
+
+.number_card {
+    width: 79%;
+}
+
+.month_card,
+.year_card,
+.ccv_card {
+    width: 20%;
+}
+
+.card_info {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 10.2% 2% 10.2%;
+}
+
+.password {
+    margin: 2% 0 2% 0;
+}
+
+.name-card {
+    width: 79%;
+}
+
+.pay_btn {
+    margin: 5px;
+    margin-top: 10%;
+}
+
+.pay_btn1 {
+    text-decoration: none;
+    color: #373737;
+    border: #373737 2px solid;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px/10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pay_btn1:hover {
+    background: #00a99d;
+    border-radius: 5px/10px;
+    transition-duration: 0.3s;
 }
 
 .prices {
@@ -1667,6 +1783,12 @@ sup {
 
     .section__skills_number {
         margin-left: 30%;
+    }
+
+    .price__form-pay {
+        width: 100%;
+        top: 30%;
+        left: 0;
     }
 }
 

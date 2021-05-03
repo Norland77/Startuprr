@@ -97,6 +97,7 @@ function HideScrol() {
     //document.getElementById("header").style.position = "sticky";
     document.getElementById("header").style.opacity = "1";
     document.getElementById("header").style.transitionDuration = "0.5s";
+    document.getElementById("header").style.visibility = "visible";
   }
   else
   {
@@ -104,27 +105,11 @@ function HideScrol() {
     //document.getElementById("header").style.position = "fixed";
     document.getElementById("header").style.opacity = "0";
     document.getElementById("header").style.transitionDuration = "0.5s";
+    document.getElementById("header").style.visibility = "hidden";
   }
 };
 
 //Burger
-
-/*function Burger() {
-  if (document.getElementById("nav").style.display == "none")
-  {
-    document.getElementById("nav").style.display == "none"
-    document.getElementById("nav").style.opacity == "0"
-    document.getElementById("nav").style.transitionDuration = "0.5s";
-    document.getElementById("logo").style.display = "flex";
-  }
-  else
-  {
-    document.getElementById("nav").style.display == "flex"
-    document.getElementById("nav").style.opacity == "1"
-    document.getElementById("nav").style.transitionDuration = "0.5s";
-    document.getElementById("logo").style.display = "none";
-  }
-};*/
 
 function Burger() {
   if (document.getElementById("nav").style.display == "flex")
